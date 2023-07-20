@@ -50,7 +50,10 @@ plt.plot(X_train,lr.predict(X_train),color='red')
 plt.xlabel('CGPA')
 plt.ylabel('Package(in lpa)')
 plt.show()
+
+
 WRITE A PROGRAM TO IMPLEMENT DECISION TREE USING PYTHON/R/PROGRAMMING LANGUAGE OF YOUR CHOICE  (load_iris())
+
 import matplotlib.pyplot as plt
 import pandas as pd
 import sklearn.datasets
@@ -88,6 +91,7 @@ tree.plot_tree(clf, feature_names = fn, class_names = cn,filled = True); fig.sav
 
 
 Write Python Code to demonstrate implementation of Decision Trees Using Python.Use BREAST CANCER Dataset
+
 # Import necessary libraries
 import numpy as np
 import pandas as pd
@@ -127,6 +131,7 @@ plt.show()
 
 
 Write Python/R Programming Code to demonstrate Accuracy and Confusion Matrix of the decision tree model.
+
 from pandas import DataFrame
 from sklearn.datasets import load_iris
 data_b = load_iris()
@@ -165,6 +170,7 @@ print(cm)
 
 
 Write Python/R Programming Code to demonstrate implementation K Nearest Neighbour (KNN) Machine Learning Classifier, using BREAST CANCER Dataset
+
 from pandas import DataFrame
 # from sklearn.datasets import load_iris
 from sklearn.datasets import load_breast_cancer
@@ -241,6 +247,7 @@ print(train(concept,target))
 
 
 Candidate-Elimination
+
 import numpy as np
 import pandas as pd
 data = pd.read_csv('C:/Users/sarvadnya/Desktop/Sheet01.csv')
@@ -287,6 +294,7 @@ print("Final General_h: ", g_final, sep="\n")
 
 
 Write Python Code to demonstrate Precision, Recall, F1-Score of the decision tree model.
+
 from sklearn.datasets import load_iris, load_breast_cancer
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
@@ -410,6 +418,7 @@ print("number of worng prediction:",wrg)
 
 
 Write Python/R Programming Code to demonstrate implementation K Nearest Neighbour (KNN) Machine Learning Classifier, using breast cancer Dataset
+
 from pandas import DataFrame
 from sklearn.datasets import load_breast_cancer
 data_b = load_breast_cancer()
@@ -521,6 +530,7 @@ print(cm)
 
 
 Write Python/R Programming Code to implement the K-Nearest Neighbour (KNN) algorithm to classify the IRIS dataset.
+
 from pandas import DataFrame
 from sklearn.datasets import load_iris
 data_b = load_iris()
@@ -560,6 +570,7 @@ print("number of worng prediction:",wrg)
 
 
 Write Python/R Programming Code to implement the K-Nearest Neighbour (KNN) algorithm to classify the Brest cancer dataset.
+
 from pandas import DataFrame
 from sklearn.datasets import load_breast_cancer
 data_b = load_breast_cancer()
@@ -596,6 +607,7 @@ print("number of worng prediction:",wrg)
 
 
 Write Python/R Programming Code to demonstrate Precision, Recall, F1- Score of the KNN model.
+
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
@@ -634,6 +646,7 @@ print("F-measure (Irish Dataset):", f1_iris)
 
 
 Write Python/R Programming Code Print both correct and wrong predictions and Accuracy of the KNN Model
+
 from pandas import DataFrame
 from sklearn.datasets import load_breast_cancer
 data_b = load_breast_cancer()
@@ -670,6 +683,7 @@ print("number of worng prediction:",wrg)
 
 
 Write Python/R Programming Code Print both correct and wrong predictions and Print Accuracy of the Naive Bayes Classifier Model
+
 #naive Basesian Classfier
 # for dataset
 import numpy as np
@@ -707,6 +721,7 @@ print(cm)
 
 
 Write Python/R Programming Code to implement the implement Naïve Bayes Classifier to classify the IRIS dataset
+
 #naive Basesian Classfier
 # for dataset
 import numpy as np
@@ -740,6 +755,7 @@ print(cm)
 
 
 Write Python/R Programming Code Print Precision, Recall, F1-Score of the Naive Bayes Classifier Model.
+
 #naive Basesian Classfier
 # for dataset
 import numpy as np
@@ -782,6 +798,7 @@ print("F-measure (Irish Dataset):", f1_iris)
 
 
 Write Python/R Programming Code to demonstrate Accuracy and Confusion Matrix of the Naive Bayes Classifier Model.
+
 #naive Basesian Classfier
 # for dataset
 import numpy as np
