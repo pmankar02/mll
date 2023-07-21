@@ -926,6 +926,49 @@ data.T, n_clusters, 2, error=0.005, maxiter=1000, init=None
 
 
 
+Write a program for single-variable (two variable) linear regression and find 
+parameters like Sum of Squared Errors (SSE), Total Sum of Squares (SST), R 
+Square , Adjusted R square etc. Input Vector X = ([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+Output Vector y = ([1, 3, 2, 5, 7, 8, 8, 9, 10, 12])
 
 
+import numpy as np
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+
+# Input data
+X = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+y = np.array([1, 3, 2, 5, 7, 8, 8, 9, 10, 12])
+
+# Create a DataFrame for easier manipulation
+data = pd.DataFrame({'X': X, 'y': y})
+
+# Fit the linear regression model
+model = LinearRegression()
+model.fit(X.reshape(-1, 1), y)
+
+# Predicted values
+y_pred = model.predict(X.reshape(-1, 1))
+
+# Calculate SSE (Sum of Squared Errors)
+SSE = np.sum((y - y_pred) ** 2)
+
+# Calculate SST (Total Sum of Squares)
+SST = np.sum((y - np.mean(y)) ** 2)
+
+# Calculate R-Squared
+R_squared = 1 - (SSE / SST)
+
+# Calculate the number of data points and the number of features
+n = len(X)
+p = 1  # We have only one feature (X) in this case
+
+# Calculate Adjusted R-Squared
+adjusted_R_squared = 1 - ((1 - R_squared) * (n - 1) / (n - p - 1))
+
+# Print the results
+print("Sum of Squared Errors (SSE):", SSE)
+print("Total Sum of Squares (SST):", SST)
+print("R-Squared (R^2):", R_squared)
+print("Adjusted R-Squared (Adjusted R^2):", adjusted_R_squared)
 
